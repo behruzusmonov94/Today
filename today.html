@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="row">
+    <aside class="main-aside bg-light-a height-100vh">
+        <div class="logo-small">
+            <img src="logo.svg" alt="">
+        </div>
+        <div class="today-list">            
+            <a href="today.html">Worklist 2019</a>
+        </div>
+        <div class="add-list-form">
+            <form action="">
+                <input type="text" placeholder="Add new list">
+                <input type="image" src="add button.svg">
+            </form>
+        </div>
+    </aside>
+    <main class="main-content">
+        <h1 class="team-name">Cinemamax team</h1>
+        <fieldset>
+            <legend><h2 class="list-name">Worklist 2020</h2></legend>
+        </fieldset>
+        
+        <div class="row">
+            <div class="col-10 inner-list">
+                <span id="inList">
+                    <a href="#" id="bg-blue">January</a>
+                    <a href="#">February</a>
+                    <a href="#">March</a>
+                    <a href="#">April</a>
+                </span>
+                <form id="addInput" style="display: none;">
+                    <input type="text" id="listValue"><button id="addBt" onclick="addListIn()">add</button>
+                </form>
+                <button class="add-inner-list" id="addInnerList" onclick="addInListFn()">+</button>
+            </div>
+            <div class="col-2 align-right">
+                users
+            </div>
+        </div>
+
+        <table class="main-table">
+            <tr>
+                <td>Event date</td>
+                <td>Type</td>
+                <td>Studio name</td>
+                <td>Editor</td>
+                <td>Timeline</td>
+                <td>Status</td>
+                <td>Upload status</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text">
+                </td>
+                <td>
+                    <select>
+                        <option value="" selected></option>
+                        <option>Wedding</option>
+                        <Option>BM</Option>
+                    </select>
+                </td>
+                <td>
+                    <select name="" id="">
+                        <option value="" selected></option>
+                        <option value="">Robinson Studios</option>
+                        <option value="">Mendel</option>
+                        <option value="">Gordi studio</option>
+                        <option value="">Creative studio</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="" id="">
+                        <option value="" selected></option>
+                        <option value="">Alisher</option>
+                        <option value="">Behruz</option>
+                        <option value="">Islom</option>
+                        <option value="">Ruslan</option>
+                    </select>
+                </td>
+                <td>
+                    <input type="date" class="endDate">
+                </td>
+                <td>
+                    <select name="" id="">
+                        <option value="" selected></option>
+                        <option value="">Done</option>
+                        <option value="">Working on it</option>
+                        <option value="">Missing files</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="" id="">
+                        <option value="" selected></option>
+                        <option value="">Uploaded</option>
+                        <option value="">Not uploaded</option>
+                    </select>
+                </td>
+                <td><button class="chat-button"></button></td>
+            </tr>
+            
+            
+        </table>
+        <button class="add-button" id="addTask" onclick="addTaskFn()">+</button>
+
+
+        <!--Statistic info-->
+        <fieldset class="margin-top-50">
+            <legend><h2 class="list-name">Statistic info</h2></legend>
+        </fieldset>
+        <div class="row statistic-info">
+            <div class="col-3 card">
+                <div class="card-name">Editor</div>
+                <div class="card-info">
+                    <p>Alisher - 1</p>
+                    <p>Ruslan - 1</p> 
+                    <p>Bahrom - 1</p> 
+                    <p>Islom - 1</p> 
+                    <p>Behruz - 1</p> 
+                </div>
+            </div>
+            <div class="col-3 card">
+                <div class="card-name">Studio name</div>
+                <div class="card-info">
+                    <p>Robinson studios - 4</p>
+                    <p>Mendel - 1</p> 
+                </div>
+            </div>
+            <div class="col-3 card">
+                <div class="card-name">Type</div>
+                <div class="card-info">
+                    <p id="wedding">Wedding - 4</p>
+                    <p>BM - 1</p> 
+                </div>
+            </div>
+            <div class="col-3 card">
+                <div class="card-name">Total</div>
+                <div class="card-info">
+                    <h1>5</h1>
+                </div>
+            </div>
+        </div>
+    </main>
+</div>
+<script src="js/main.js"></script>
+
+</body>
+</html>

@@ -411,7 +411,7 @@ legend{
     margin-top: 50px;
 }
 .chat-button{
-    background-image: url('../chat.svg');
+    background-image: url('../icons/chat.svg');
     background-color: #f5f5f5;
     width: 30px;
     height: 30px;

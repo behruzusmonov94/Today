@@ -81,3 +81,11 @@ function addListIn(){
     listValue.value = "";
 
 }
+
+var listVal = document.getElementById('listVal');
+
+function addAsideList(){
+    var asList = `<a href="#">`+listVal.value+`</a>`;
+    
+
+}

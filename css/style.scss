@@ -31,15 +31,33 @@ body{
 .logo{
     text-align: center;
     img{
-        width: 150px;
+        width: 160px;
     }
 }
 .aside-list{
+    margin-top: 20px;
     a{
+        text-decoration: none;
+        color: #28333B;
+        font-weight: 300;
+        padding: 6px 20px 6px 30px;
         display: table;
+        font-family: 'roboto', sans-serif;
 
         &:hover{
             background-color: $blue;
+            color: $whiteA;
+            border-radius: 0px 35px 35px 0px;
         }
+    }
+}
+.add-list{
+    text-align: center;
+    margin-top: 10px;
+    input[type = text]{
+        padding: 4px;
+    }
+    button{
+        padding: 4px;
     }
 }

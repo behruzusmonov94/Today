@@ -103,14 +103,38 @@ body {
 }
 
 .logo img {
-  width: 150px;
+  width: 160px;
+}
+
+.aside-list {
+  margin-top: 20px;
 }
 
 .aside-list a {
+  text-decoration: none;
+  color: #28333B;
+  font-weight: 300;
+  padding: 6px 20px 6px 30px;
   display: table;
+  font-family: 'roboto', sans-serif;
 }
 
 .aside-list a:hover {
   background-color: #0090FF;
+  color: #FAFAFA;
+  border-radius: 0px 35px 35px 0px;
+}
+
+.add-list {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.add-list input[type=text] {
+  padding: 4px;
+}
+
+.add-list button {
+  padding: 4px;
 }
 /*# sourceMappingURL=style.css.map */

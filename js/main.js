@@ -85,7 +85,7 @@ function addListIn(){
 var listVal = document.getElementById('listVal');
 
 function addAsideList(){
-    var asList = `<a href="#">`+listVal.value+`</a>`;
-    
+    document.querySelector('.aside-list').innerHTML += `<a href="#">`+listVal.value+`</a>`;
+    listVal.value = "";
 
 }

@@ -20,7 +20,7 @@ body{
     width: 250px;
     height: 100vh;
     background-color: $whiteB;
-    padding: 10px;
+    padding: 10px 0px;
 }
 .main-content{
     width: calc(100% - 250px);
@@ -35,18 +35,11 @@ body{
     }
 }
 .aside-list{
-    ul{
-        list-style: none;
-        padding: 0px;
-        li{
-            a{
-                color: $textColor;
-                text-decoration: none;
-                &:hover{
-                    background-color: $blue;
-                    color: $whiteA;
-                }
-            }
+    a{
+        display: table;
+
+        &:hover{
+            background-color: $blue;
         }
     }
 }

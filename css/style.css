@@ -71,4 +71,53 @@ body {
   width: 91.66667%;
   padding: 10px;
 }
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-width: 1000px;
+}
+
+.main-aside {
+  width: 250px;
+  height: 100vh;
+  background-color: #F5F5F5;
+  padding: 10px;
+}
+
+.main-content {
+  width: calc(100% - 250px);
+  background-color: #FAFAFA;
+  height: 100vh;
+  padding: 10px;
+}
+
+.logo {
+  text-align: center;
+}
+
+.logo img {
+  width: 150px;
+}
+
+.aside-list ul {
+  list-style: none;
+  padding: 0px;
+}
+
+.aside-list ul li a {
+  color: #28333B;
+  text-decoration: none;
+}
+
+.aside-list ul li a:hover {
+  background-color: #0090FF;
+  color: #FAFAFA;
+}
 /*# sourceMappingURL=style.css.map */

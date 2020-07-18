@@ -10,3 +10,43 @@ body{
 
 }
 @import "grid";
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    min-width: 1000px;
+}
+.main-aside{
+    width: 250px;
+    height: 100vh;
+    background-color: $whiteB;
+    padding: 10px;
+}
+.main-content{
+    width: calc(100% - 250px);
+    background-color: $whiteA;
+    height: 100vh;
+    padding: 10px;
+}
+.logo{
+    text-align: center;
+    img{
+        width: 150px;
+    }
+}
+.aside-list{
+    ul{
+        list-style: none;
+        padding: 0px;
+        li{
+            a{
+                color: $textColor;
+                text-decoration: none;
+                &:hover{
+                    background-color: $blue;
+                    color: $whiteA;
+                }
+            }
+        }
+    }
+}

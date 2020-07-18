@@ -86,7 +86,7 @@ body {
 
 .main-aside {
   width: 250px;
-  height: 100vh;
+  min-height: 100vh;
   background-color: #F5F5F5;
   padding: 10px 0px;
 }
@@ -94,7 +94,7 @@ body {
 .main-content {
   width: calc(100% - 250px);
   background-color: #FAFAFA;
-  height: 100vh;
+  min-height: 100vh;
   padding: 10px;
 }
 
@@ -126,15 +126,84 @@ body {
 }
 
 .add-list {
-  text-align: center;
   margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .add-list input[type=text] {
-  padding: 4px;
+  background-color: #FAFAFA;
+  border: none;
+  outline: none;
+  border-radius: 6px 0px 0px 6px;
+  padding: 0px 10px;
+  -webkit-transition: all 200ms ease;
+  transition: all 200ms ease;
 }
 
 .add-list button {
   padding: 4px;
+  background: url("../icons/add button.svg");
+  background-size: auto;
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+  outline: none;
+  border: none;
+}
+
+.card {
+  background-color: #fff;
+  padding: 10px;
+  -webkit-transition: -webkit-box-shadow 200ms ease;
+  transition: -webkit-box-shadow 200ms ease;
+  transition: box-shadow 200ms ease;
+  transition: box-shadow 200ms ease, -webkit-box-shadow 200ms ease;
+}
+
+.card:hover {
+  -webkit-box-shadow: 0px 0px 30px -10px #888;
+          box-shadow: 0px 0px 30px -10px #888;
+  position: relative;
+}
+
+@media (max-width: 600px) {
+  .row {
+    min-width: auto;
+  }
+  .main-aside {
+    width: 100%;
+    min-height: auto;
+  }
+  .aside-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .aside-list a {
+    padding: 4px 10px;
+  }
+  .aside-list a:hover {
+    border-radius: 4px;
+  }
+  .add-list input {
+    width: 80%;
+  }
+  .main-content {
+    min-height: auto;
+    width: 100%;
+  }
+  .card {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=style.css.map */

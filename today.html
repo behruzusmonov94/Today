@@ -18,11 +18,9 @@
                     <a href="#">Robinson studio</a>
                     <a href="#">Cinemamax studio</a>
                     <a href="#">Creative studio</a>
-
-                
             </div>
-            <form action="" class="add-list">
-                <input type="text" id="listVal"><button id="addListBt" onclick="addAsideList()"></button>
+            <form class="add-list">
+                <input type="text" id="listVal"><button onclick="addAsideList()" type="submit"></button>
             </form>
         </aside>
         <main class="main-content">
@@ -105,7 +103,14 @@
                     
                     
                 </table>
-            
+                <div class="add-button">
+                    <button class="add-task" onclick="addTaskFn()">+</button>
+                </div>
+                
+
+                <fieldset>
+                    <legend>Statistic info</legend>
+                </fieldset>
             </div>
         </main>
     </div>    

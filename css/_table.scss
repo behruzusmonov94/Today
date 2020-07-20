@@ -1,7 +1,16 @@
 .table{
     width: 100%;
+    min-width: 1000px;
+    
+
     thead{
         font-size: smaller;
+        td:first-child{
+            border-radius: 10px 0px 0px 0px;
+        }
+        td:last-child{
+            border-radius: 0px 10px 0px 0px;
+        }
     }
     tr{
         td{
@@ -12,14 +21,40 @@
     }
 }
 .table{
-    input[type = text],select{
+    input[type = text],input[type = date],select{
         width: 100%;
         height: 100%;
         background-color: $whiteB;
         border: none;
         padding: 4px 10px;
-        &:hover{
-            background-color: $whiteA;
+        outline: none;
+        &:focus{
+            background-color: #eee;
         }
+        &:hover{
+            background-color: #eee;
+        }
+    }
+}
+.add-button{
+    width: 100%;
+    text-align: center;
+}
+.add-task{
+    width: calc(100% - 3px);
+    text-align: center;
+    background-color: $whiteB;
+    height: 40px;
+    border: none;
+    outline: none;
+    border-radius: 0px 0px 10px 10px;
+    font-size: 1em;
+    transition: all 100ms ease;
+    &:hover{
+        background-color: #eee;
+    }
+    &:active{
+        background-color: $blue;
+        color: $whiteA;
     }
 }

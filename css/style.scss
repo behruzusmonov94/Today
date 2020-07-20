@@ -41,6 +41,7 @@ body{
         color: #28333B;
         font-weight: 300;
         padding: 6px 20px 6px 30px;
+        margin-bottom: 2px;
         display: table;
         font-family: 'roboto', sans-serif;
 
@@ -121,6 +122,9 @@ body{
 .flex-start{
     justify-content: start;
 }
+.flex-center{
+    justify-content: center;
+}
 .inline-nav{
     margin-bottom: 10px;
     a,button{
@@ -152,8 +156,7 @@ fieldset{
         font-size: x-large;
         font-style: italic;
         font-weight: 300;
-    }
-    
+    }   
 }
 @import "table";
 

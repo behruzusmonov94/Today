@@ -117,6 +117,44 @@ body{
         width: 100%;
     }
 }
+
+.flex-start{
+    justify-content: start;
+}
+.inline-nav{
+    margin-bottom: 10px;
+    a,button{
+        padding: 10px;
+        background-color: $whiteB;
+        color: $textColor;
+        text-decoration: none;
+        font-weight: 300;
+        margin: 2px;
+        border: none;
+        border-radius: 6px;
+        &:hover{
+            background-color: $blue;
+            color: $whiteA;
+        }
+    }
+    button{
+        width: 40px;
+        cursor: pointer;
+    }
+}
+
+fieldset{
+    width: 100%;
+    border: none;
+    border-top: solid 1px $textColor;
+    legend{
+        padding: 10px;
+        font-size: x-large;
+        font-style: italic;
+        font-weight: 300;
+    }
+    
+}
 @import "table";
 
 @import "icons";

@@ -207,12 +207,74 @@ body {
   }
 }
 
+.flex-start {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+.inline-nav {
+  margin-bottom: 10px;
+}
+
+.inline-nav a, .inline-nav button {
+  padding: 10px;
+  background-color: #F5F5F5;
+  color: #28333B;
+  text-decoration: none;
+  font-weight: 300;
+  margin: 2px;
+  border: none;
+  border-radius: 6px;
+}
+
+.inline-nav a:hover, .inline-nav button:hover {
+  background-color: #0090FF;
+  color: #FAFAFA;
+}
+
+.inline-nav button {
+  width: 40px;
+  cursor: pointer;
+}
+
+fieldset {
+  width: 100%;
+  border: none;
+  border-top: solid 1px #28333B;
+}
+
+fieldset legend {
+  padding: 10px;
+  font-size: x-large;
+  font-style: italic;
+  font-weight: 300;
+}
+
 .table {
   width: 100%;
 }
 
-.table td {
-  border: solid 1px #333;
+.table thead {
+  font-size: smaller;
+}
+
+.table tr td {
+  text-align: center;
+  background-color: #F5F5F5;
+  height: 40px;
+}
+
+.table input[type=text], .table select {
+  width: 100%;
+  height: 100%;
+  background-color: #F5F5F5;
+  border: none;
+  padding: 4px 10px;
+}
+
+.table input[type=text]:hover, .table select:hover {
+  background-color: #FAFAFA;
 }
 
 .ico-chat {
@@ -220,5 +282,10 @@ body {
   width: 2em;
   height: 2em;
   display: block;
+}
+
+.btn-ico {
+  background-color: #F5F5F5;
+  border: none;
 }
 /*# sourceMappingURL=style.css.map */

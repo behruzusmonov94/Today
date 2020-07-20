@@ -206,4 +206,20 @@ body {
     width: 100%;
   }
 }
+
+.table {
+  width: 100%;
+}
+
+.table td {
+  border: solid 1px #333;
+  background: #333;
+}
+
+.ico-chat {
+  background: url("../icons/chat.svg");
+  width: 2em;
+  height: 2em;
+  display: block;
+}
 /*# sourceMappingURL=style.css.map */

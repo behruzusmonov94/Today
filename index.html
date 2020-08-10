@@ -1,28 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Firebase Today</title>
     <link rel="stylesheet" href="css/style.css">
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-firestore.js"></script>
 </head>
+
 <body>
-    
+
     <div class="row">
         <aside class="main-aside">
             <div class="logo">
                 <a href="#"><img src="icons/logo.svg" alt=""></a>
             </div>
             <div class="aside-list">
-                    <a href="#">Worklist 2020</a>
-                    <a href="#">Robinson studio</a>
-                    <a href="#">Cinemamax studio</a>
-                    <a href="#">Creative studio</a>
+                <ul id="aside-list">
+                </ul>
             </div>
-            <form class="add-list">
-                <input type="text" id="listVal"><button onclick="addAsideList()" type="submit"></button>
+            <form class="add-list" id="add-list">
+                <input type="text" name="name" required><button type="submit"></button>
             </form>
         </aside>
+
+        <!--         
         <main class="main-content">
             <div class="row">
                 
@@ -115,11 +120,35 @@
                 </fieldset>
             </div>
         </main>
-    </div>    
+    </div>     -->
 
 
-<script src="js/main.js"></script>
-<script src="js/app.js"></script>
+
+
+
+
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+        <script>
+            // Your web app's Firebase configuration
+            var firebaseConfig = {
+                apiKey: "AIzaSyDiX8X5cl268rrqVGV6HuI43-EGr_ZEqjY",
+                authDomain: "today-a5c62.firebaseapp.com",
+                databaseURL: "https://today-a5c62.firebaseio.com",
+                projectId: "today-a5c62",
+                storageBucket: "today-a5c62.appspot.com",
+                messagingSenderId: "920985235465",
+                appId: "1:920985235465:web:905dbe6d9593a90f6608d8"
+            };
+            // Initialize Firebase
+            firebase.initializeApp(firebaseConfig);
+            const db = firebase.firestore();
+        </script>
+
+        <script src="js/main.js"></script>
+        <script src="js/app.js"></script>
 
 </body>
+
 </html>

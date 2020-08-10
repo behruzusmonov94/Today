@@ -1,62 +1,103 @@
 @import "var";
 @import "colors";
-*{
-    box-sizing: border-box;   
+
+* {
+    box-sizing: border-box;
     font-family: $fontC;
 }
-body{
+
+body {
     background-color: #FAFAFA;
     margin: 0;
 
 }
+
 @import "grid";
-.row{
+
+.row {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     min-width: 1000px;
 }
-.main-aside{
+
+.main-aside {
     width: 250px;
     min-height: 100vh;
     background-color: $whiteB;
     padding: 10px 0px;
 }
-.main-content{
+
+.main-content {
     width: calc(100% - 250px);
     background-color: $whiteA;
     min-height: 100vh;
     padding: 10px;
 }
-.logo{
+
+.logo {
     text-align: center;
-    img{
+
+    img {
         width: 160px;
     }
 }
-.aside-list{
+
+.aside-list {
     margin-top: 20px;
-    a{
+
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        li {
+
+            padding: 6px 20px 6px 0px;
+            
+        }
+        .dropdown-menu{
+            position: absolute;
+            padding: 10px;
+            width: 220px;
+            margin-top: 25px;
+            margin-left: 20px;
+            background-color: $whiteA;
+            border-radius: 10px;
+            box-shadow: 0px 0px 60px -30px #888;
+            div{
+                cursor: pointer;
+                font-size: smaller;
+                background-color: $whiteB;
+                padding: 10px;
+                margin-top: 1px;
+            }
+        }
+    }
+
+    a {
         text-decoration: none;
         color: #28333B;
         font-weight: 300;
         padding: 6px 20px 6px 30px;
         margin-bottom: 2px;
-        display: table;
         font-family: 'roboto', sans-serif;
-
-        &:hover{
+    
+        &:hover {
             background-color: $blue;
             color: $whiteA;
             border-radius: 0px 35px 35px 0px;
         }
+
     }
 }
-.add-list{
+
+.add-list {
     margin-top: 10px;
     display: flex;
     justify-content: center;
-    input[type = text]{
+
+    input[type=text] {
         background-color: $whiteA;
         border: none;
         outline: none;
@@ -64,7 +105,8 @@ body{
         padding: 0px 10px;
         transition: all 200ms ease;
     }
-    button{
+
+    button {
         padding: 4px;
         background: url('../icons/add\ button.svg');
         background-size: auto;
@@ -76,58 +118,71 @@ body{
     }
 }
 
-.card{
+.card {
     background-color: #fff;
     padding: 10px;
     transition: box-shadow 200ms ease;
-    &:hover{
+
+    &:hover {
         box-shadow: 0px 0px 30px -10px #888;
         position: relative;
     }
 }
-@media (max-width: 600px){
-    .row{
+
+@media (max-width: 600px) {
+    .row {
         min-width: auto;
     }
-    .main-aside{
+
+    .main-aside {
         width: 100%;
         min-height: auto;
-        
+
     }
-    .aside-list{
+
+    .aside-list {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        a{
+
+        a {
             padding: 4px 10px;
-            &:hover{
+
+            &:hover {
                 border-radius: 4px;
             }
         }
     }
-    .add-list{
-        input{
+
+    .add-list {
+        input {
             width: 80%;
         }
     }
-    .main-content{
+
+    .main-content {
         min-height: auto;
         width: 100%;
     }
-    .card{
+
+    .card {
         width: 100%;
     }
 }
 
-.flex-start{
+.flex-start {
     justify-content: start;
 }
-.flex-center{
+
+.flex-center {
     justify-content: center;
 }
-.inline-nav{
+
+.inline-nav {
     margin-bottom: 10px;
-    a,button{
+
+    a,
+    button {
         padding: 10px;
         background-color: $whiteB;
         color: $textColor;
@@ -136,28 +191,35 @@ body{
         margin: 2px;
         border: none;
         border-radius: 6px;
-        &:hover{
+
+        &:hover {
             background-color: $blue;
             color: $whiteA;
         }
     }
-    button{
+
+    button {
         width: 40px;
         cursor: pointer;
     }
 }
 
-fieldset{
+fieldset {
     width: 100%;
     border: none;
     border-top: solid 1px $textColor;
-    legend{
+
+    legend {
         padding: 10px;
         font-size: x-large;
         font-style: italic;
         font-weight: 300;
-    }   
+    }
 }
+
+
+
+
 @import "table";
 
 @import "icons";

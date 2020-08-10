@@ -3,41 +3,123 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Today</title>
+    <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-   <div class="row">
-       <div class="col-8 bg-light height-100vh">
-           <div class="logo">
-            <img src="icons/logo.svg" alt="">
-        </div>
-        <div class="first-page">
-            <img src="img/main page.png" alt="">
-            <img src="img/chat.png" alt="">
-        </div>
-       </div>
-       <div class="col-4 bg-dark height-100vh">
-        <div class="login-form align-center">
-            <div>
-                <p>
-                    Log-in
-                </p>
-                <form action="today.html">
-                <input type="email" required class="login-w bg-light" placeholder="Enter your email">
-                    <button type="submit" class="enter-button"><img src="icons/enter ico.svg" alt=""></button>
-                </form>
-                <p class="font-300">
-                    or Sign-in with...
-                </p>
-                <button class="log-button google">Google</button>
-                <button class="log-button facebook">Facebook</button>
-                <p>
-                    <a href="#">Create Account</a>
-                </p>
+    
+    <div class="row">
+        <aside class="main-aside">
+            <div class="logo">
+                <a href="#"><img src="icons/logo.svg" alt=""></a>
             </div>
-        </div>
-       </div>
-   </div>
+            <div class="aside-list">
+                    <a href="#">Worklist 2020</a>
+                    <a href="#">Robinson studio</a>
+                    <a href="#">Cinemamax studio</a>
+                    <a href="#">Creative studio</a>
+            </div>
+            <form class="add-list">
+                <input type="text" id="listVal"><button onclick="addAsideList()" type="submit"></button>
+            </form>
+        </aside>
+        <main class="main-content">
+            <div class="row">
+                
+                <fieldset>
+                    <legend>CinemaMax studio 2020</legend>
+                </fieldset>
+
+                <div class="row flex-start inline-nav">
+                    <a href="#">January</a>
+                    <a href="#">February</a>
+                    <a href="#">March</a>
+                    <a href="#">April</a>
+                    <button>+</button>
+                </div>
+
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <td>Event date</td>
+                        <td>Type</td>
+                        <td>Studio name</td>
+                        <td>Editor</td>
+                        <td>Timeline</td>
+                        <td>Status</td>
+                        <td>Upload status</td>
+                        <td></td>
+                    </tr>
+                    </thead>
+                    <tr>
+                        <td>
+                            <form id="eventDate" name="eventDate">
+                                <input type="text" id="eventDateInp">
+                            </form>
+                        </td>
+                        <td>
+                            <select id="type" name="type">
+                                <option disabled selected hidden></option>
+                                <option>Wedding</option>
+                                <Option>BM</Option>
+                            </select>
+                        </td>
+                        <td>
+                            <select id="studio" name="studio">
+                                <option selected hidden disabled></option>
+                                <option>Robinson Studios</option>
+                                <option>Mendel</option>
+                                <option>Gordi studio</option>
+                                <option>Creative studio</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select name="editor" id="editor">
+                                <option selected hidden></option>
+                                <option>Alisher</option>
+                                <option>Behruz</option>
+                                <option>Islom</option>
+                                <option>Ruslan</option>
+                            </select>
+                        </td>
+                        <td>
+                            <input type="date" class="endDate" name="timeline" id="timeline">
+                        </td>
+                        <td>
+                            <select name="status" id="status">
+                                <option selected hidden></option>
+                                <option>Done</option>
+                                <option>Working on it</option>
+                                <option>Missing files</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select name="upload" id="upload">
+                                <option selected hidden></option>
+                                <option>Uploaded</option>
+                                <option>Not uploaded</option>
+                            </select>
+                        </td>
+                        <td><button class="btn-ico"><i class="ico-chat"></i></button></td>
+                    </tr>
+                    
+                    
+                </table>
+                <div class="add-button">
+                    <button class="add-task" onclick="addTaskFn()">+</button>
+                </div>
+                
+
+                <fieldset>
+                    <legend>Statistic info</legend>
+                </fieldset>
+            </div>
+        </main>
+    </div>    
+
+
+<script src="js/main.js"></script>
+<script src="js/app.js"></script>
+
 </body>
 </html>
